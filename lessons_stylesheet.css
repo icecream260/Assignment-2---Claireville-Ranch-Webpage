@@ -1,0 +1,211 @@
+body {
+  background-color: #f7dbb6;
+}
+@font-face {
+  font-family: 'DemoTheScriledgeFace'; /* Use a clear name without spaces */
+  src: url('fonts/Demothescriledgeface-xRxor.otf') format('opentype');
+}
+
+@font-face {
+  font-family:'Quicking'; serif; /* Use a clear name without spaces */
+  src: url('fonts/QuickingRegular-gw5KY.otf') format('opentype');
+}
+/* The banner title now uses the correct font name */
+.banner-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 4rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  font-family: 'DemoTheScriledgeFace', serif;
+  margin-top:-10px;
+  text-shadow: 3px 3px 5px #442D1C;
+  color: #E8D1A7;
+
+}
+
+/* The rest of your code */
+.banner-container {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius:20px;
+}
+
+#navBar {
+    width: fit-content; /* This makes the container only as wide as its content. */
+    margin: 0 auto; /* This centers the container horizontally on the page. */
+}
+
+#navBar ul {
+    display: flex; /* Makes the list items display side-by-side. */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+#navBar li {
+    background-color: #442D1C;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    border-radius:20px;
+    margin: 0 10px;
+    list-style:none;
+}
+
+/* Hover effect */
+#navBar li:hover {
+    background-color: #743014;
+    color: #E8D1A7;
+}
+
+#topTitle {
+  background-image: url(img/ranch.png);
+  width:100%;
+  height:200;
+  overflow: hidden;
+  position: relative;
+}
+
+.topTitle-text {
+  text-align: center;
+  font-family:'DemoTheScriledgeFace', serif;
+  font-size: 80px;
+  color: #442D1C;
+}
+
+.topTitle-text1 {
+  text-align:center;
+  font-family: "Montserrat", sans-serif;
+  font-size:20px;
+  margin-top:-20px;
+  font-weight:500;
+  color: #743014;
+}
+
+#lessons-mainContent {
+  margin-left:125px;
+  margin-right:125px;
+}
+.lessons-introduction {
+  text-align: center;
+}
+
+h1 {
+  font-family:  "Montserrat", sans-serif;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size:18px;
+}
+.courses-container {
+  display: flex; /* Use flexbox to put the blocks side-by-side */
+  justify-content: center; /* Centers the blocks horizontally */
+  gap: 20px; /* Adds space between the blocks */
+  margin-top: 40px;
+}
+
+.course-block {
+  width: 45%; /* Makes each block take up almost half the container's width */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(249, 249, 249, 0.5);
+  
+}
+
+.course-block h3 {
+  text-align: center;
+  color: #555;
+  font-size: 1.5rem;
+  font-family:  "Montserrat", sans-serif;
+  color: #743014;
+}
+
+.course-block ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.course-block li {
+  margin-bottom: 10px;
+}
+
+.course-block-title {
+  font-family: "Montserrat", sans-serif;
+  color: #743014;
+  }
+
+.course-block-description {
+  font-size:16px;
+}
+
+.courseImg {
+  width: 100%; /* Makes the image fill the width of its parent block */
+  height: auto; /* Maintains the image's aspect ratio to prevent distortion */
+  border-radius: 5px; /* Adds a slight curve to the corners of the image */
+  margin-bottom: 15px; /* Adds some space between the image and the text below it */
+}
+ul li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  list-style: square;
+  margin-left: 20px;
+}
+.lessons-attention {
+  font-style: italic;
+  font-size: 0.9em;
+  text-align: center;
+  font-weight:bold;
+}
+#lessons-contact {
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #9D9167;
+  color: #442D1C;
+  border-radius: 20px;
+}
+/* Container for centering */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Removed height: 100vh; */
+  margin-top: 30px; /* Add some space above the button */
+  margin-bottom: 30px; /* Add some space below the button */
+}
+
+/* Button styles */
+.register-button {
+  background-color: #442D1C;
+  color: #E8D1A7;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Hover effect */
+.register-button:hover {
+  background-color: #743014;
+  color: #E8D1A7;
+}
